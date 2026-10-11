@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Common Threats | Trace</title>
+  <link rel="stylesheet" href="threats.css">
+</head>
+<body>
+  <div class="header">
+    <div class="header-inner">
+      <div class="logo" onclick="goTo('index.html')">Trace</div>
+      <div class="menu">
+        <div class="menu-item" onclick="goTo('index.html')">Home</div>
+        <div class="menu-item" onclick="goTo('password-checker.html')">Checker</div>
+        <div class="menu-item" onclick="goTo('password-generator.html')">Generator</div>
+        <div class="menu-item active" onclick="goTo('threats.html')">Threats</div>
+        <div class="menu-item" onclick="goTo('tips.html')">Tips</div>
+        <div class="menu-item" onclick="goTo('quiz.html')">Quiz</div>
+        <div class="menu-item" onclick="goTo('about.html')">About</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="page">
+    <div class="title">Common threats</div>
+    <div class="subtitle">These are the most common ways attackers try to get into accounts. Click a card to see how to stay safe.</div>
+    <div class="row">
+      <div class="col">
+        <div class="card threat" onclick="toggle('safe-1')">
+          <div class="card-title">Phishing</div>
+          <div class="text">Fake emails, messages or websites that pretend to be a real company so you give away your password.</div>
+          <div class="more-link">Show how to stay safe</div>
+          <div class="safe" id="safe-1">Do not click links from people you do not know. Check the sender address. Type the website address yourself.</div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card threat" onclick="toggle('safe-2')">
+          <div class="card-title">Brute force attack</div>
+          <div class="text">A program tries thousands of passwords every second until one of them works.</div>
+          <div class="more-link">Show how to stay safe</div>
+          <div class="safe" id="safe-2">Use long passwords and turn on two-factor authentication. Many sites also lock the account after many wrong tries.</div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <div class="card threat" onclick="toggle('safe-3')">
+          <div class="card-title">Credential stuffing</div>
+          <div class="text">Attackers take a leaked password from one site and try it on many other sites.</div>
+          <div class="more-link">Show how to stay safe</div>
+          <div class="safe" id="safe-3">Use a different password for every account. A password manager makes this easy.</div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card threat" onclick="toggle('safe-4')">
+          <div class="card-title">Malware</div>
+          <div class="text">Harmful software such as viruses and spyware. It can steal your data or watch what you type.</div>
+          <div class="more-link">Show how to stay safe</div>
+          <div class="safe" id="safe-4">Install apps only from trusted stores. Keep your device and antivirus updated.</div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <div class="card threat" onclick="toggle('safe-5')">
+          <div class="card-title">Social engineering</div>
+          <div class="text">Attackers trick people instead of computers. For example, someone pretends to be IT support.</div>
+          <div class="more-link">Show how to stay safe</div>
+          <div class="safe" id="safe-5">Never share your password or OTP code with anyone. If unsure, call the official phone number.</div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card threat" onclick="toggle('safe-6')">
+          <div class="card-title">Ransomware</div>
+          <div class="text">Software that locks your files and asks for money to unlock them.</div>
+          <div class="more-link">Show how to stay safe</div>
+          <div class="safe" id="safe-6">Keep backups of important files. Do not open unknown attachments. Install updates.</div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <div class="card threat" onclick="toggle('safe-7')">
+          <div class="card-title">Public Wi-Fi spying</div>
+          <div class="text">Someone on the same network can watch the data that you send.</div>
+          <div class="more-link">Show how to stay safe</div>
+          <div class="safe" id="safe-7">Avoid banking on public Wi-Fi. Use websites that start with https. A VPN can help.</div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card threat" onclick="toggle('safe-8')">
+          <div class="card-title">Shoulder surfing</div>
+          <div class="text">Someone watches you type your password or PIN from behind or from far away.</div>
+          <div class="more-link">Show how to stay safe</div>
+          <div class="safe" id="safe-8">Cover the keypad, use a screen lock and be careful in public places.</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <div class="footer">Trace - a cybersecurity project about password safety</div>
+
+  <script src="threats.js"></script>
+</body>
+</html>

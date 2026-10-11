@@ -1,0 +1,265 @@
+/* ---------- Basic setup ---------- */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Verdana, Arial, sans-serif;
+  background: #f2f5f9;
+  color: #16222f;
+}
+
+/* ---------- Header and menu ---------- */
+.header {
+  background: #0e2a47;
+}
+
+.header-inner {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 14px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-family: Georgia, serif;
+  font-size: 30px;
+  font-weight: bold;
+  color: #ff6b2c;
+  cursor: pointer;
+}
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.menu-item {
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-size: 14px;
+  color: #c8d6e6;
+  cursor: pointer;
+}
+
+.menu-item:hover {
+  background: #1b3f66;
+  color: #ffffff;
+}
+
+.menu-item.active {
+  background: #ff6b2c;
+  color: #2a1100;
+  font-weight: bold;
+}
+
+/* ---------- Page layout ---------- */
+.page {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 10px 20px 20px 20px;
+}
+
+.title {
+  font-family: Georgia, serif;
+  font-size: 36px;
+  font-weight: bold;
+  color: #0e2a47;
+  margin: 30px 0 8px 0;
+}
+
+.subtitle {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #4a5b6e;
+  margin-bottom: 24px;
+  max-width: 650px;
+}
+
+.section-title {
+  font-family: Georgia, serif;
+  font-size: 24px;
+  font-weight: bold;
+  color: #0e2a47;
+  margin: 30px 0 14px 0;
+}
+
+/* ---------- Cards, text and buttons ---------- */
+.card {
+  background: #ffffff;
+  border: 1px solid #d3dce6;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 16px;
+}
+
+.card-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #0e2a47;
+  margin-bottom: 8px;
+}
+
+.text {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #34465a;
+}
+
+.btn {
+  display: inline-block;
+  background: #0e2a47;
+  color: #ffffff;
+  padding: 10px 18px;
+  border-radius: 6px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  margin: 10px 8px 0 0;
+}
+
+.btn:hover {
+  background: #1b3f66;
+}
+
+.btn.light {
+  background: #e3eaf2;
+  color: #16222f;
+}
+
+.btn.light:hover {
+  background: #d3dce6;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.col {
+  flex: 1;
+  min-width: 260px;
+}
+
+.input {
+  flex: 1;
+  min-width: 0;
+  padding: 12px;
+  font-size: 18px;
+  border: 2px solid #b7c4d3;
+  border-radius: 6px;
+  background: #ffffff;
+  color: #16222f;
+}
+
+.input:focus {
+  outline: none;
+  border-color: #ff6b2c;
+}
+
+/* ---------- Footer ---------- */
+.footer {
+  text-align: center;
+  font-size: 13px;
+  color: #6a7b8e;
+  padding: 24px 0;
+  margin-top: 30px;
+  border-top: 1px solid #d3dce6;
+}
+
+/* ---------- Small screens ---------- */
+@media (max-width: 700px) {
+  .header-inner {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .title {
+    font-size: 28px;
+  }
+  .row {
+    flex-direction: column;
+  }
+}
+
+/* ---------- Styles only for this page ---------- */
+.progress-text {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.progress-bg {
+  height: 16px;
+  background: #e1e8f0;
+  border-radius: 8px;
+}
+
+.progress-fill {
+  height: 16px;
+  width: 0%;
+  background: #0a7a3c;
+  border-radius: 8px;
+  transition: width 0.3s;
+}
+
+.done-message {
+  font-size: 15px;
+  font-weight: bold;
+  color: #0a7a3c;
+  margin-top: 10px;
+}
+
+.tip {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+  background: #ffffff;
+  border: 2px solid #d3dce6;
+  border-radius: 8px;
+  padding: 14px 16px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.tip:hover {
+  border-color: #b7c4d3;
+}
+
+.tip.done {
+  background: #e6f4ec;
+  border-color: #0a7a3c;
+}
+
+.tip-box {
+  width: 26px;
+  height: 26px;
+  line-height: 22px;
+  text-align: center;
+  font-weight: bold;
+  color: #ffffff;
+  border: 2px solid #b7c4d3;
+  border-radius: 6px;
+  flex-shrink: 0;
+}
+
+.tip.done .tip-box {
+  background: #0a7a3c;
+  border-color: #0a7a3c;
+}
+
+.tip-title {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+.tip-why {
+  font-size: 14px;
+  color: #4a5b6e;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz | Trace</title>
+  <link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+  <div class="header">
+    <div class="header-inner">
+      <div class="logo" onclick="goTo('index.html')">Trace</div>
+      <div class="menu">
+        <div class="menu-item" onclick="goTo('index.html')">Home</div>
+        <div class="menu-item" onclick="goTo('password-checker.html')">Checker</div>
+        <div class="menu-item" onclick="goTo('password-generator.html')">Generator</div>
+        <div class="menu-item" onclick="goTo('threats.html')">Threats</div>
+        <div class="menu-item" onclick="goTo('tips.html')">Tips</div>
+        <div class="menu-item active" onclick="goTo('quiz.html')">Quiz</div>
+        <div class="menu-item" onclick="goTo('about.html')">About</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="page">
+    <div class="title">Security quiz</div>
+    <div class="subtitle">Answer 6 short questions and see how much you know.</div>
+
+    <div class="card" id="quiz-box">
+      <div class="question-count" id="question-count"></div>
+      <div class="question" id="question"></div>
+      <div id="answers"></div>
+      <div class="feedback" id="feedback"></div>
+      <div class="btn" id="next-btn" onclick="nextQuestion()">Next question</div>
+    </div>
+
+    <div class="card" id="result-box">
+      <div class="card-title">Your result</div>
+      <div class="score" id="score"></div>
+      <div class="text" id="result-text"></div>
+      <div class="btn" onclick="startQuiz()">Try again</div>
+      <div class="btn light" onclick="goTo('tips.html')">See safety tips</div>
+    </div>
+  </div>
+  <div class="footer">Trace - a cybersecurity project about password safety</div>
+
+  <script src="quiz.js"></script>
+</body>
+</html>

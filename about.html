@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About | Trace</title>
+  <link rel="stylesheet" href="about.css">
+</head>
+<body>
+  <div class="header">
+    <div class="header-inner">
+      <div class="logo" onclick="goTo('index.html')">Trace</div>
+      <div class="menu">
+        <div class="menu-item" onclick="goTo('index.html')">Home</div>
+        <div class="menu-item" onclick="goTo('password-checker.html')">Checker</div>
+        <div class="menu-item" onclick="goTo('password-generator.html')">Generator</div>
+        <div class="menu-item" onclick="goTo('threats.html')">Threats</div>
+        <div class="menu-item" onclick="goTo('tips.html')">Tips</div>
+        <div class="menu-item" onclick="goTo('quiz.html')">Quiz</div>
+        <div class="menu-item active" onclick="goTo('about.html')">About</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="page">
+    <div class="title">About Trace</div>
+    <div class="subtitle">Trace is a cybersecurity project that teaches password safety and basic online protection in very simple words.</div>
+
+    <div class="row">
+      <div class="col">
+        <div class="card">
+          <div class="card-title">Our goal</div>
+          <div class="text">Many people use weak passwords because nobody showed them a better way. Trace explains the risks and gives easy tools to fix them.</div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <div class="card-title">Built with</div>
+          <div class="text">Plain HTML (only div tags), plain CSS and simple JavaScript. No libraries and no tracking. Everything runs in your browser.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">What is inside</div>
+      <div class="text">Home, Password checker, Password generator, Common threats, Safety tips, Quiz, and this About page.</div>
+    </div>
+
+    <div class="section-title">Questions and answers</div>
+    <div class="card faq" onclick="toggle('answer-1')">
+      <div class="card-title">Is my password sent anywhere?</div>
+      <div class="faq-answer" id="answer-1">No. The checker runs fully in your browser and nothing is saved or sent. Still, never type your real password on websites you do not trust.</div>
+    </div>
+    <div class="card faq" onclick="toggle('answer-2')">
+      <div class="card-title">Can I use a generated password for a real account?</div>
+      <div class="faq-answer" id="answer-2">Yes. The generator uses your browser's secure random number tool. Save the password in a password manager so you do not lose it.</div>
+    </div>
+    <div class="card faq" onclick="toggle('answer-3')">
+      <div class="card-title">Is the time to crack exact?</div>
+      <div class="faq-answer" id="answer-3">No. It is a rough guess that only shows the idea: longer and more mixed passwords take much more time to break.</div>
+    </div>
+    <div class="card faq" onclick="toggle('answer-4')">
+      <div class="card-title">What is a password manager?</div>
+      <div class="faq-answer" id="answer-4">An app that stores all your passwords safely and fills them in for you. You only remember one strong master password.</div>
+    </div>
+
+  </div>
+  <div class="footer">Trace - a cybersecurity project about password safety</div>
+
+  <script src="about.js"></script>
+</body>
+</html>

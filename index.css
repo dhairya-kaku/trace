@@ -1,0 +1,288 @@
+/* ---------- Basic setup ---------- */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Verdana, Arial, sans-serif;
+  background: #f2f5f9;
+  color: #16222f;
+}
+
+/* ---------- Header and menu ---------- */
+.header {
+  background: #0e2a47;
+}
+
+.header-inner {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 14px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-family: Georgia, serif;
+  font-size: 30px;
+  font-weight: bold;
+  color: #ff6b2c;
+  cursor: pointer;
+}
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.menu-item {
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-size: 14px;
+  color: #c8d6e6;
+  cursor: pointer;
+}
+
+.menu-item:hover {
+  background: #1b3f66;
+  color: #ffffff;
+}
+
+.menu-item.active {
+  background: #ff6b2c;
+  color: #2a1100;
+  font-weight: bold;
+}
+
+/* ---------- Page layout ---------- */
+.page {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 10px 20px 20px 20px;
+}
+
+.title {
+  font-family: Georgia, serif;
+  font-size: 36px;
+  font-weight: bold;
+  color: #0e2a47;
+  margin: 30px 0 8px 0;
+}
+
+.subtitle {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #4a5b6e;
+  margin-bottom: 24px;
+  max-width: 650px;
+}
+
+.section-title {
+  font-family: Georgia, serif;
+  font-size: 24px;
+  font-weight: bold;
+  color: #0e2a47;
+  margin: 30px 0 14px 0;
+}
+
+/* ---------- Cards, text and buttons ---------- */
+.card {
+  background: #ffffff;
+  border: 1px solid #d3dce6;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 16px;
+}
+
+.card-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #0e2a47;
+  margin-bottom: 8px;
+}
+
+.text {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #34465a;
+}
+
+.btn {
+  display: inline-block;
+  background: #0e2a47;
+  color: #ffffff;
+  padding: 10px 18px;
+  border-radius: 6px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  margin: 10px 8px 0 0;
+}
+
+.btn:hover {
+  background: #1b3f66;
+}
+
+.btn.light {
+  background: #e3eaf2;
+  color: #16222f;
+}
+
+.btn.light:hover {
+  background: #d3dce6;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.col {
+  flex: 1;
+  min-width: 260px;
+}
+
+.input {
+  flex: 1;
+  min-width: 0;
+  padding: 12px;
+  font-size: 18px;
+  border: 2px solid #b7c4d3;
+  border-radius: 6px;
+  background: #ffffff;
+  color: #16222f;
+}
+
+.input:focus {
+  outline: none;
+  border-color: #ff6b2c;
+}
+
+/* ---------- Footer ---------- */
+.footer {
+  text-align: center;
+  font-size: 13px;
+  color: #6a7b8e;
+  padding: 24px 0;
+  margin-top: 30px;
+  border-top: 1px solid #d3dce6;
+}
+
+/* ---------- Small screens ---------- */
+@media (max-width: 700px) {
+  .header-inner {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .title {
+    font-size: 28px;
+  }
+  .row {
+    flex-direction: column;
+  }
+}
+
+/* ---------- Styles only for this page ---------- */
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  align-items: center;
+  padding: 40px 0 10px 0;
+}
+
+.hero-text {
+  flex: 1;
+  min-width: 280px;
+}
+
+.hero-title {
+  font-family: Georgia, serif;
+  font-size: 44px;
+  font-weight: bold;
+  line-height: 1.15;
+  color: #0e2a47;
+  margin-bottom: 14px;
+}
+
+.hero-sub {
+  font-size: 17px;
+  line-height: 1.6;
+  color: #4a5b6e;
+  margin-bottom: 10px;
+}
+
+.demo {
+  flex: 1;
+  min-width: 280px;
+  background: #ffffff;
+  border: 1px solid #d3dce6;
+  border-radius: 8px;
+  padding: 22px;
+}
+
+.demo-pass {
+  font-family: "Courier New", monospace;
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.demo-bar-bg {
+  height: 12px;
+  background: #e1e8f0;
+  border-radius: 6px;
+}
+
+.demo-bar {
+  height: 12px;
+  border-radius: 6px;
+}
+
+.demo-bar.weak {
+  width: 15%;
+  background: #d93025;
+}
+
+.demo-bar.strong {
+  width: 100%;
+  background: #0a7a3c;
+}
+
+.demo-caption {
+  font-size: 13px;
+  color: #4a5b6e;
+  margin: 6px 0 22px 0;
+}
+
+.demo-caption:last-child {
+  margin-bottom: 0;
+}
+
+.link-card {
+  cursor: pointer;
+  height: 100%;
+}
+
+.link-card:hover {
+  border-color: #ff6b2c;
+}
+
+.fact-box {
+  background: #0e2a47;
+  border-radius: 8px;
+  padding: 26px;
+  margin-top: 10px;
+}
+
+.fact-text {
+  font-family: Georgia, serif;
+  font-size: 22px;
+  line-height: 1.4;
+  color: #ffffff;
+  margin-bottom: 6px;
+}

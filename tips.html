@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Safety Tips | Trace</title>
+  <link rel="stylesheet" href="tips.css">
+</head>
+<body>
+  <div class="header">
+    <div class="header-inner">
+      <div class="logo" onclick="goTo('index.html')">Trace</div>
+      <div class="menu">
+        <div class="menu-item" onclick="goTo('index.html')">Home</div>
+        <div class="menu-item" onclick="goTo('password-checker.html')">Checker</div>
+        <div class="menu-item" onclick="goTo('password-generator.html')">Generator</div>
+        <div class="menu-item" onclick="goTo('threats.html')">Threats</div>
+        <div class="menu-item active" onclick="goTo('tips.html')">Tips</div>
+        <div class="menu-item" onclick="goTo('quiz.html')">Quiz</div>
+        <div class="menu-item" onclick="goTo('about.html')">About</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="page">
+    <div class="title">Safety tips</div>
+    <div class="subtitle">Click each tip when you follow it. Try to complete all 10.</div>
+
+    <div class="card">
+      <div class="progress-text" id="progress-text">0 of 10 done</div>
+      <div class="progress-bg">
+        <div class="progress-fill" id="progress-fill"></div>
+      </div>
+      <div class="done-message" id="done-message"></div>
+      <div class="btn light" onclick="resetTips()">Start again</div>
+    </div>
+
+    <div id="tip-list"></div>
+  </div>
+  <div class="footer">Trace - a cybersecurity project about password safety</div>
+
+  <script src="tips.js"></script>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home | Trace</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <div class="header">
+    <div class="header-inner">
+      <div class="logo" onclick="goTo('index.html')">Trace</div>
+      <div class="menu">
+        <div class="menu-item active" onclick="goTo('index.html')">Home</div>
+        <div class="menu-item" onclick="goTo('password-checker.html')">Checker</div>
+        <div class="menu-item" onclick="goTo('password-generator.html')">Generator</div>
+        <div class="menu-item" onclick="goTo('threats.html')">Threats</div>
+        <div class="menu-item" onclick="goTo('tips.html')">Tips</div>
+        <div class="menu-item" onclick="goTo('quiz.html')">Quiz</div>
+        <div class="menu-item" onclick="goTo('about.html')">About</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="page">
+    <div class="hero">
+      <div class="hero-text">
+        <div class="hero-title">Know your passwords. Protect your life online.</div>
+        <div class="hero-sub">Trace is a small cybersecurity project. It shows how weak passwords get broken and how you can keep your accounts safe.</div>
+        <div class="btn" onclick="goTo('password-checker.html')">Check my password</div>
+        <div class="btn light" onclick="goTo('threats.html')">Learn about attacks</div>
+      </div>
+      <div class="demo">
+        <div class="demo-pass">password1</div>
+        <div class="demo-bar-bg"><div class="demo-bar weak"></div></div>
+        <div class="demo-caption">Very weak. Guessed almost instantly.</div>
+        <div class="demo-pass">river-LANTERN-47-cobalt!</div>
+        <div class="demo-bar-bg"><div class="demo-bar strong"></div></div>
+        <div class="demo-caption">Very strong. Long and hard to guess.</div>
+      </div>
+    </div>
+
+    <div class="section-title">What you can do on Trace</div>
+    <div class="row">
+      <div class="col">
+        <div class="card link-card" onclick="goTo('password-checker.html')">
+          <div class="card-title">Password checker</div>
+          <div class="text">Type a password and see how strong it is and how long it may take to crack.</div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card link-card" onclick="goTo('password-generator.html')">
+          <div class="card-title">Password generator</div>
+          <div class="text">Make a strong random password in one click and copy it.</div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card link-card" onclick="goTo('threats.html')">
+          <div class="card-title">Common threats</div>
+          <div class="text">Learn about phishing, malware, ransomware and more in simple words.</div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <div class="card link-card" onclick="goTo('tips.html')">
+          <div class="card-title">Safety tips</div>
+          <div class="text">A checklist of 10 easy habits that keep you safe.</div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card link-card" onclick="goTo('quiz.html')">
+          <div class="card-title">Quiz</div>
+          <div class="text">Test what you learned with 6 short questions.</div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card link-card" onclick="goTo('about.html')">
+          <div class="card-title">About and FAQ</div>
+          <div class="text">Learn about this project and get answers to common questions.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="fact-box">
+      <div class="fact-text" id="fact"></div>
+      <div class="btn light" onclick="showFact()">Show another fact</div>
+    </div>
+  </div>
+  <div class="footer">Trace - a cybersecurity project about password safety <br>build by dhairya sanghvi <br><a href="https://www.instagram.com/____.dhairya.23/#">instagram id</a></div>
+
+  <script src="index.js"></script>
+</body>
+</html>
