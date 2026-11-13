@@ -1,0 +1,20 @@
+{
+  "name": "trace",
+  "version": "1.0.0",
+  "description": "TRACE - Digital Footprint Analyzer",
+  "scripts": {
+    "dev": "vercel dev",
+    "build": "echo 'Static site - no build needed'",
+    "lint": "echo 'No linter configured'"
+  },
+  "keywords": [
+    "cybersecurity",
+    "password",
+    "security"
+  ],
+  "author": "Dhairya Sanghvi",
+  "license": "MIT",
+  "dependencies": {
+    "@vercel/analytics": "^1.1.1"
+  }
+}
